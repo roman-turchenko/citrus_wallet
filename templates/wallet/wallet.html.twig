@@ -1,0 +1,6 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <p>The wallet of {{ admin_email }} {{ app.user ? app.user.id : ''}}</p>
+    <p><a href="{{ path('app_logout') }}">Logout</a></p>
+{% endblock %}
